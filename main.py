@@ -5,7 +5,7 @@ import streamlit as st
 import openai
 
 #configuring openai-api key
-working_dir =os.path.dirname(os.path.abspath(r"C:\Users\vaish\PycharmProjects\gpt-4o-chatbot\src\config.json"))
+working_dir =os.path.dirname(os.path.abspath(r"__file_path__"))
 config_data =json.load(open(f"{working_dir}/config.json"))
 
 OPENAI_API_KEY = config_data["OPENAI_API_KEY"]
